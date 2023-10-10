@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+    <center>
+        <div id="oya">
+            <h1>FizzBuzz</h1>
+            <input type="text" placeholder="Enter a number" id="number">
+            <div id="gp">
+            <button onclick="check()">Check</button></div>
+            <div id="result"></div>
+        </div>
+    </center>
+
+
+
+    <script>
+        function check(){
+            var checkFizz = number.value
+            if (checkFizz == ""){
+                result.innerHTML = "enter a number alaye"
+            }
+            else if (checkFizz %3== 0 && checkFizz %5== 0){
+                result.innerHTML = "FizzBuzz"
+            }
+
+            else if (checkFizz %3==0){
+                result.innerHTML = "Fizz"
+            }
+            
+            else if (checkFizz %5==0){
+                result.innerHTML = "Buzz"
+            }
+
+            else {
+                result.innerHTML = "This is just a normal Number"
+            }
+        }
+    </script>
+</body>
+</html>
